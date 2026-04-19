@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Oluwabusayomi - 21 Years of Greatness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Playfair+Display:wght@400;700;900&family=Inconsolata:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="loader"></div>
+            <p>Loading your special day...</p>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="https://open.spotify.com/track/0HRVRl4bHTe0fkng5HAxpg?si=a864b564cadd428a" type="audio/mpeg">
+    </audio>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="gradient-text">OLUWABUSAYOMI</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#countdown" class="nav-link">Countdown</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#reasons" class="nav-link">21 Reasons</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#message" class="nav-link">Message</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="stars"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title animate-title">
+                    <span class="char">E</span><span class="char">l</span><span class="char">i</span><span class="char">z</span><span class="char">a</span><span class="char">b</span><span class="char">e</span><span class="char">t</span><span class="char">h</span>
+                    <br>
+                    <span class="char">O</span><span class="char">l</span><span class="char">u</span><span class="char">w</span><span class="char">a</span><span class="char">b</span><span class="char">u</span><span class="char">s</span><span class="char">a</span><span class="char">y</span><span class="char">o</span><span class="char">m</span><span class="char">i</span>
+                </h1>
+                <p class="hero-date animate-date">2nd May • 21 Years of Magic</p>
+                <div class="hero-message">
+                    <p class="message-text">
+                        I don't even know where to start with you, Oluwabusayomi.
+                        <br><br>
+                        You've grown into someone so strong, so kind and so intentional and it's been so beautiful to watch. There's something about you that people don't always see immediately but once they do, they never forget it.
+                        <br><br>
+                        The way you care, the way you show up, the way you carry things quietly and still manage to be there for others...it's rare and I can't say how much I appreciate that about you.
+                        <br><br>
+                        You make people feel safe. You make me feel seen, thank you for always looking out for me. The way you dey always carry my matter for head sef dey scare me.🥹
+                        <br><br>
+                        Your ability to show up and show off, how responsible and honest you are is not something easy to find. Thank you for setting the pace and clearing ways for me.
+                        <br><br>
+                        I'm so proud of you. Not just for what you've done, but for who you are becoming.
+                        <br><br>
+                        21 looks good on you, not because of the number, but because of the woman you're growing into.
+                        <br><br>
+                        And I hope this year reminds you of how loved you are, how valued you are, and how much more is ahead of you. The world hasn't even seen half of what you carry yet.
+                        <br><br>
+                        I love you, Abike... I will always love you.
+                        <br><br>
+                        And even on days you don't feel like it... just know, you will always be HER.
+                    </p>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to continue</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+     <section class="countdown-section" id="countdown">
+        <div class="countdown-container">
+            <h2 class="section-title">Until the Big Day</h2>
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days"></div>
+                    <p class="countdown-label">Days</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours"></div>
+                    <p class="countdown-label">Hours</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes"></div>
+                    <p class="countdown-label">Minutes</p>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds"></div>
+                    <p class="countdown-label">Seconds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline-section" id="timeline">
+        <h2 class="section-title">Life's Beautiful Journey</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>The Beginning</h3>
+                    <p>Where it all started - a story of growth, strength, and becoming.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Growing Stronger</h3>
+                    <p>Through challenges and triumphs, showing the world your power.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                    <h3>Becoming Her</h3>
+                    <p>Becoming the woman you were always meant to be.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 21 Reasons Section -->
+    <section class="reasons-section" id="reasons">
+        <h2 class="section-title">21 Reasons You're Unforgettable</h2>
+        <div class="reasons-grid">
+            <div class="reason-card" data-reason="1">
+                <span class="reason-number">01</span>
+                <p class="reason-text">You love deeply, even when it's not easy</p>
+            </div>
+            <div class="reason-card" data-reason="2">
+                <span class="reason-number">02</span>
+                <p class="reason-text">You show up for people in ways they don't forget</p>
+            </div>
+            <div class="reason-card" data-reason="3">
+                <span class="reason-number">03</span>
+                <p class="reason-text">Your presence feels like peace</p>
+            </div>
+            <div class="reason-card" data-reason="4">
+                <span class="reason-number">04</span>
+                <p class="reason-text">You carry strength so quietly</p>
+            </div>
+            <div class="reason-card" data-reason="5">
+                <span class="reason-number">05</span>
+                <p class="reason-text">You make people feel seen without trying</p>
+            </div>
+            <div class="reason-card" data-reason="6">
+                <span class="reason-number">06</span>
+                <p class="reason-text">You are kind without being weak</p>
+            </div>
+            <div class="reason-card" data-reason="7">
+                <span class="reason-number">07</span>
+                <p class="reason-text">You're soft, but never fragile</p>
+            </div>
+            <div class="reason-card" data-reason="8">
+                <span class="reason-number">08</span>
+                <p class="reason-text">You keep going, even when it's hard</p>
+            </div>
+            <div class="reason-card" data-reason="9">
+                <span class="reason-number">09</span>
+                <p class="reason-text">You don't give up on people easily</p>
+            </div>
+            <div class="reason-card" data-reason="10">
+                <span class="reason-number">10</span>
+                <p class="reason-text">You bring light into heavy moments</p>
+            </div>
+            <div class="reason-card" data-reason="11">
+                <span class="reason-number">11</span>
+                <p class="reason-text">You are thoughtful in the smallest ways</p>
+            </div>
+            <div class="reason-card" data-reason="12">
+                <span class="reason-number">12</span>
+                <p class="reason-text">You're growing, even when no one notices</p>
+            </div>
+            <div class="reason-card" data-reason="13">
+                <span class="reason-number">13</span>
+                <p class="reason-text">You don't need to be loud to be powerful</p>
+            </div>
+            <div class="reason-card" data-reason="14">
+                <span class="reason-number">14</span>
+                <p class="reason-text">You love with your whole heart</p>
+            </div>
+            <div class="reason-card" data-reason="15">
+                <span class="reason-number">15</span>
+                <p class="reason-text">You are genuine in a world that isn't</p>
+            </div>
+            <div class="reason-card" data-reason="16">
+                <span class="reason-number">16</span>
+                <p class="reason-text">You are becoming more and more yourself</p>
+            </div>
+            <div class="reason-card" data-reason="17">
+                <span class="reason-number">17</span>
+                <p class="reason-text">You handle things most people couldn't</p>
+            </div>
+            <div class="reason-card" data-reason="18">
+                <span class="reason-number">18</span>
+                <p class="reason-text">You care deeply, even when it costs you</p>
+            </div>
+            <div class="reason-card" data-reason="19">
+                <span class="reason-number">19</span>
+                <p class="reason-text">You are beautiful inside and out</p>
+            </div>
+            <div class="reason-card" data-reason="20">
+                <span class="reason-number">20</span>
+                <p class="reason-text">You are rare</p>
+            </div>
+            <div class="reason-card" data-reason="21">
+                <span class="reason-number">21</span>
+                <p class="reason-text">You are HER. Always have been. Always will be.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <h2 class="section-title">Moments That Matter</h2>
+        <div class="gallery-grid" id="galleryGrid">
+            <!-- Gallery items will be populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Modal for Gallery -->
+    <div class="modal" id="modal">
+        <span class="close">&times;</span>
+        <img class="modal-image" id="modalImage" src="" alt="">
+    </div>
+
+    <!-- Message Section -->
+    <section class="message-section" id="message">
+        <div class="message-container">
+            <div class="message-text-wrapper">
+                <h2 class="typewriter-text" id="typewriter"></h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grand Finale Section -->
+    <section class="finale-section" id="finale">
+        <div class="finale-content">
+            <h1 class="finale-title">Happy Birthday</h1>
+            <h2 class="finale-subtitle">Oluwabusayomi</h2>
+            <p class="finale-message">You Are Absolutely Unforgettable ✨</p>
+           
+            <button class="finale-button" id="celebrateBtn">Celebrate!</button><br>
+             <small>Yours sincerely</small>
+             <small>Abisola</small>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
