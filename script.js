@@ -230,7 +230,11 @@ reasonCards.forEach((card, index) => {
 
 // ==================== GALLERY SETUP ====================
 const imageFolder = 'birthday pictures/';
+const birthdayFolder = 'birthday/';
 const imageNames = [
+    { folder: birthdayFolder, name: '6021823627268918426.jpg' },
+    { folder: birthdayFolder, name: '6021823627268918427.jpg' },
+    { folder: birthdayFolder, name: '6021823627268918428.jpg' },
     '14dfa2d9-db7e-4379-bfc6-8bc125932b19.jpg',
     '160d00a8-da8b-455e-8591-e79f8343b768.jpg',
     '1aa60758-5aff-4ace-ab19-74da44c26b09.jpg',
@@ -290,11 +294,12 @@ const modalImage = document.getElementById('modalImage');
 const closeBtn = document.querySelector('.close');
 
 // Populate gallery
-imageNames.forEach((imageName, index) => {
+imageNames.forEach((image, index) => {
+    const imagePath = typeof image === 'string' ? `${imageFolder}${image}` : `${image.folder}${image.name}`;
     const item = document.createElement('div');
     item.className = 'gallery-item';
     item.innerHTML = `
-        <img src="${imageFolder}${imageName}" alt="Gallery image ${index + 1}" loading="lazy">
+        <img src="${imagePath}" alt="Gallery image ${index + 1}" loading="lazy">
         <div class="gallery-overlay">
             <i class="fas fa-search"></i>
         </div>
@@ -302,7 +307,7 @@ imageNames.forEach((imageName, index) => {
     
     item.addEventListener('click', () => {
         modal.style.display = 'block';
-        modalImage.src = `${imageFolder}${imageName}`;
+        modalImage.src = imagePath;
         gsap.to(modalImage, { duration: 0.3, scale: 1, opacity: 1 });
     });
 
